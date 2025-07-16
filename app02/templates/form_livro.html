@@ -1,0 +1,11 @@
+<h2>Adicionar Livro</h2>
+<form method="post">
+    {% csrf_token %}
+    <label>Título:</label><br>
+    <input type="text" name="titulo"><br>
+    <label>Autor:</label><br>
+    <input type="text" name="autor"><br>
+    <label>Ano de Publicação:</label><br>
+    <input type="number" name="ano_publicacao"><br><br>
+    <button type="submit">Salvar</button>
+</form>
